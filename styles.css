@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Unica+One);
+body {
+  font: 100%/1.4 Unica One;
+  text-transform: uppercase;
+  background: #222;
+  color: whitesmoke;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
+}
+
+.layer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: fixed;
+  color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+  -webkit-transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+          transform: perspective(800px) scale(1) translateX(0) rotateY(0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+nav {
+  -webkit-box-align: center;
+          align-items: center;
+  vertical-align: center;
+}
+nav ul {
+  font-size: larger;
+  line-height: 2;
+  padding-left: 66.66%;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+nav ul li {
+  cursor: pointer;
+}
+
+.home {
+  background: #007480;
+}
+body:hover .home {
+  -webkit-transform: perspective(800px) scale(0.5) translateX(-16.66%) rotateY(25deg);
+          transform: perspective(800px) scale(0.5) translateX(-16.66%) rotateY(25deg);
+}
