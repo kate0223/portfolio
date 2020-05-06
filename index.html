@@ -4,11 +4,18 @@
         <title>testSite</title>
         <link href="styles.css" rel="stylesheet">
         <script src="common.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     </head>
     <body>
-        <div id="loading">
-            <div class="spinner"></div>
-        </div>
+        <div id="overlay">
+            <img src="img/831.svg" alt="Wait" alt="Loading" />
+            <div id="overlayText">
+                Wait  
+                Loading
+            </div>
+       </div>
+        <div id="container">
 
         <nav class="layer">
             <ul>
@@ -20,11 +27,12 @@
             </ul>
         </nav>
 
-        <!-- <section class="home page layer">
+        <section class="home page layer">
             <h1>Hello<br>I am Keito.</h1>
         </section>
-         -->
-       
+        
+        </div>
+
         
       
 

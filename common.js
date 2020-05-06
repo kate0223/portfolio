@@ -1,4 +1,12 @@
-window.onload = function() {
-    const spinner = document.getElementById('loading');
-    spinner.classList.add('loaded');
-}
+var delay = 1500;
+setTimeout(function() 
+
+    {  
+
+        $( "#overlay" ).fadeOut( "slow" );
+
+         $('#container').fadeIn();
+
+    },
+    delay
+) ;
