@@ -100,3 +100,11 @@ body:hover .home {
     background-color:#222;
     opacity:0.7;
 }
+
+@media screen and (max-width: 480px) { 
+  #overlay > img {
+    box-sizing: border-box;
+    width: 30%;
+  }
+
+}
